@@ -1,0 +1,310 @@
+/* styles.css */
+
+/* 全局樣式 */
+html {
+    scroll-behavior: smooth; /* 啟用平滑滾動 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #badbff, #e4faff);
+    color: #333;
+}
+
+/* Header 樣式 */
+header {
+    background: #333 url('背景.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    transition: background 0.5s ease;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header h4 {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/* 目錄樣式 */
+.directory {
+    margin: 30px; /* 加大外部間距 */
+    padding: 20px; /* 加大內部間距 */
+    background: #f0f8ff;
+    border-radius: 15px; /* 圓角更大 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* 更深的陰影 */
+    text-align: center; /* 居中樣式 */
+    display: flex; /* 使用 Flexbox */
+    flex-wrap: wrap; /* 允許換行 */
+    justify-content: space-between; /* 目錄項目並排並且有間距 */
+}
+
+.directory h2 {
+    font-size: 2rem; /* 字體更大 */
+    color: #333;
+    font-weight: bold; /* 加粗字體 */
+    margin-bottom: 15px; /* 增加下間距 */
+    text-transform: uppercase; /* 全部大寫 */
+    letter-spacing: 2px; /* 增加字母間距 */
+}
+
+.directory ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    flex: 1 1 45%; /* 目錄項目佔據 45% 寬度並且能夠縮放 */
+    min-width: 250px; /* 限制最小寬度，避免太小 */
+}
+
+/* 目錄項目 */
+.directory li {
+    margin: 10px 0;
+}
+
+.directory a {
+    text-decoration: none;
+    font-size: 1.2rem; /* 放大連結字體 */
+    color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+.directory a:hover {
+    color: #ff6347;
+}
+
+/* 卡片樣式 */
+.spot {
+    background: #fff;
+    padding: 20px 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+    width: 100%; /* 使卡片寬度滿版 */
+    height: 100%; /* 使卡片高度滿版 */
+    box-sizing: border-box; /* 確保內邊距不會影響寬高計算 */
+}
+
+.spot:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spot h3 {
+    color: #293e4f; 
+}
+
+.spot p {
+    color: #555;
+}
+
+.spot a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.spot a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+.spot a:focus {
+    outline: 2px dashed #0066cc;
+    outline-offset: 4px;
+}
+
+/* 景點樣式 */
+section {
+    margin: 20px 0;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+section p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* 主內容樣式 */
+main {
+    padding: 20px;
+}
+
+/* 分類標題樣式 */
+.category-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background: linear-gradient(135deg, #0066cc, #89cff0);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-title:hover {
+    background: linear-gradient(135deg, #89cff0, #0066cc); /* 改變漸變方向 */
+}
+
+/* 景點清單樣式 */
+.spot-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.spot-list li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spot-list li:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 頁尾樣式 */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* 主內容樣式 */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #222;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+/* 卡片樣式 */
+.spot {
+    background: #fff;
+    padding: 20px 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.spot:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spot h3 {
+    color: #293e4f; 
+}
+
+.spot p {
+    color: #555;
+}
+
+.spot a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.spot a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+.spot a:focus {
+    outline: 2px dashed #0066cc;
+    outline-offset: 4px;
+}
+
+
+/* 圖片樣式 */
+.spot-image {
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 5%;
+    object-fit: cover;
+    max-width: 100%;
+    transition: transform 0.3s ease; /* 加入平滑過渡效果 */
+}
+
+.spot-image:hover {
+    transform: scale(1.3); /* 放大30% */
+}
+
+.spot-image:last-child {
+    margin-right: 0;
+}
+
+.large-image {
+    width: 75%;
+    margin-right: 0;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+
+/* 響應式設計 */
+@media screen and (min-width: 768px) {
+    .spot {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .spot {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+
+/* 連結 */
+a {
+    color: #0066cc; /* 預設藍色 */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6347; /* 滑鼠懸停時變成橘紅色 */
+}
+
+a:visited {
+    color: #800080; /* 已訪問過的連結顏色 */
+}
+
+/* 區塊背景為白色 */
+#spot{
+    background-color: #fff; /* 背景為白色 */
+    padding: 20px; /* 內邊距 */
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* 陰影效果 */
+}
